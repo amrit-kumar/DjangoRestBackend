@@ -31,6 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'goToMoon.apps.GotomoonConfig',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

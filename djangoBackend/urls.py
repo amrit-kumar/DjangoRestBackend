@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url,include
+from goToMoon import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^rest-auth/', include('rest_auth.urls')),
+    # url(r'api/users^$', views.UserCreate.as_view(), name='account-create'),
+url(r'^users/register', views.register),
+
+
 ]
